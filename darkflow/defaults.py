@@ -9,11 +9,11 @@ class argHandler(dict):
         self.define('imgdir', './sample_img/', 'path to testing directory with images')
         self.define('binary', './bin/', 'path to .weights directory')
         self.define('config', './cfg/', 'path to .cfg directory')
-        self.define('dataset', '../pascal/VOCdevkit/IMG/', 'path to dataset directory')
+        self.define('dataset', './data/image/', 'path to dataset directory')
         self.define('labels', 'labels.txt', 'path to labels file')
         self.define('backup', './ckpt/', 'path to backup folder')
         self.define('summary', '', 'path to TensorBoard summaries directory')
-        self.define('annotation', '../pascal/VOCdevkit/ANN/', 'path to annotation directory')
+        self.define('annotation', './data/annotations/train/', 'path to annotation directory')
         self.define('threshold', -0.1, 'detection threshold')
         self.define('model', '', 'configuration of choice')
         self.define('trainer', 'rmsprop', 'training algorithm')
@@ -24,11 +24,11 @@ class argHandler(dict):
         self.define('savepb', False, 'save net and weight to a .pb file')
         self.define('gpu', 0.0, 'how much gpu (from 0.0 to 1.0)')
         self.define('gpuName', '/gpu:0', 'GPU device name')
-        self.define('lr', 1e-5, 'learning rate')        # Default is 1e-5
-        self.define('keep',20,'Number of most recent training results to save')
-        self.define('batch', 32, 'batch size')          # Default 16
-        self.define('epoch', 1, 'number of epoch')     # Default 1000
-        self.define('save', 2000, 'save checkpoint every ? training examples')
+        self.define('lr', 1e-4, 'learning rate')        # Default is 1e-5
+        self.define('keep', 10,'Number of most recent training results to save')
+        self.define('batch', 250, 'batch size')          # Default 16
+        self.define('epoch', 10, 'number of epoch')     # Default 1000
+        self.define('save', 500, 'save checkpoint every ? training examples')
         self.define('demo', '', 'demo on webcam')
         self.define('queue', 1, 'process demo in batch')
         self.define('json', False, 'Outputs bounding box information in json format.')
