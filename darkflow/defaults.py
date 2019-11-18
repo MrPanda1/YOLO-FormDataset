@@ -15,7 +15,7 @@ class argHandler(dict):
         self.define('summary', '', 'path to TensorBoard summaries directory')
         self.define('annotation', './data/annotations/train/', 'path to annotation directory')
         self.define('threshold', -0.1, 'detection threshold')
-        self.define('model', '', 'configuration of choice')
+        self.define('model', './cfg/yolo-forms.cfg', 'configuration of choice')
         self.define('trainer', 'rmsprop', 'training algorithm')
         self.define('momentum', 0.0, 'applicable for rmsprop and momentum optimizers')
         self.define('verbalise', True, 'say out loud while building graph')
