@@ -25,10 +25,10 @@ class argHandler(dict):
         self.define('gpu', 0.0, 'how much gpu (from 0.0 to 1.0)')
         self.define('gpuName', '/gpu:0', 'GPU device name')
         self.define('lr', 1e-4, 'learning rate')        # Default is 1e-5
-        self.define('keep', 10,'Number of most recent training results to save')
-        self.define('batch', 250, 'batch size')          # Default 16
+        self.define('keep', 2,'Number of most recent training results to save')
+        self.define('batch', 2, 'batch size')          # Default 16
         self.define('epoch', 10, 'number of epoch')     # Default 1000
-        self.define('save', 500, 'save checkpoint every ? training examples')
+        self.define('save', 400, 'save checkpoint every ? training examples') #Default 500
         self.define('demo', '', 'demo on webcam')
         self.define('queue', 1, 'process demo in batch')
         self.define('json', False, 'Outputs bounding box information in json format.')
