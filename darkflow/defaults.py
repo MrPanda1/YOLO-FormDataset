@@ -24,7 +24,7 @@ class argHandler(dict):
         self.define('savepb', False, 'save net and weight to a .pb file')
         self.define('gpu', 0.0, 'how much gpu (from 0.0 to 1.0)')
         self.define('gpuName', '/gpu:0', 'GPU device name')
-        self.define('lr', 1e-4, 'learning rate')        # Default is 1e-5
+        self.define('lr', 1e-5, 'learning rate')        # Default is 1e-5
         self.define('keep', 2,'Number of most recent training results to save')
         self.define('batch', 2, 'batch size')          # Default 16
         self.define('epoch', 10, 'number of epoch')     # Default 1000
