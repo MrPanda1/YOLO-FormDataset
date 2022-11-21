@@ -5,5 +5,5 @@ numpy==1.17.2
 opencv-python==4.1.1.26
 protobuf==3.10.0
 tensorboard==2.0.0
-tensorflow==1.13.1
+tensorflow==2.9.3
 tensorflow-estimator==2.0.0
